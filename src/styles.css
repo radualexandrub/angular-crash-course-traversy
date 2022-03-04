@@ -1,1 +1,107 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #0d47a1;
+  --secondary-color: #1976d2;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: rgba(246, 249, 255, 0.75);
+}
+
+::selection {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+.gradient-text {
+  background-image: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 1rem auto;
+  overflow: auto;
+  min-height: 300px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: saturate(170%) blur(7px);
+}
+
+.btn {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65rem 1rem;
+  transition: background-color 200ms ease;
+}
+.btn:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  cursor: pointer;
+}
+.form-control-btn {
+  text-align: end;
+}
+
+.form-container {
+  margin-bottom: 1rem;
+}
+.form-control {
+  margin: 0.25rem 0;
+  display: flex;
+  flex-direction: column;
+  accent-color: var(--primary-color);
+}
+.form-control:last-child {
+  margin-bottom: 1rem;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  margin: 0.5rem 0;
+  padding: 0.2rem 0.35rem;
+  font-size: 1rem;
+  border: 2px solid #b2c2d2;
+  transition: border-color 200ms ease-in;
+}
+.form-control input:focus {
+  border-color: var(--secondary-color);
+  outline: 0;
+}
+
+.form-control-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-control-check input {
+  margin-left: 1rem;
+  transform: scale(1.5);
+}
+.form-control-check input:focus {
+  outline: 1px solid var(--primary-color);
+}
