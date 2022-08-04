@@ -1,10 +1,16 @@
 # AngularCrashCourse
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0. This projects consists of a Tasks App from Traversy Media Angular Crash Course.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0. This projects consists of a Tasks App from [Angular Crash Course - Traversy Media - 2h1m](https://www.youtube.com/watch?v=3dHNOWTI7H8).
+
+![Angular Crash Course App Demo Screenshot](./Angular-Crash-Course-App-Demo.jpg)
 
 ## Install Dependecies
 
-Run `npm install`.
+Run `npm install`. Make sure you have [Node.js](https://nodejs.org/en/download/) installed (at least version 14/15/16).
+
+```bash
+npm install
+```
 
 ## Front-End Development server
 
