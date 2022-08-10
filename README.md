@@ -52,4 +52,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Copyright (c) 2022 Radu-Alexandru Bulai
 
-Released under [MIT License](LICENSE).
+Released under [MIT License](./LICENSE.md).
