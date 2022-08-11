@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0. This projects consists of a Tasks App from [Angular Crash Course - Traversy Media - 2h1m](https://www.youtube.com/watch?v=3dHNOWTI7H8).
 
+The complete documentation for this project can be found here: [Study Notes from Angular Crash Course - Traversy Media](https://github.com/radualexandrub/Study/blob/master/Angular/README.md).
+
 ![Angular Crash Course App Demo Screenshot](./Angular-Crash-Course-App-Demo.jpg)
 
 ## Install Dependecies
