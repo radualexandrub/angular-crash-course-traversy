@@ -110,6 +110,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 If you don't want to install Node.js and Angular on your machine, you can run this Application (both front-end app on port 4200 _AND_ back-end JSON Server on port 5000) with [Docker](https://www.docker.com/products/docker-desktop/).
 
+🔵 Note: The `Dockerfile` files were configured to run this App in Development mode (the Angular App will NOT be built and ran as production app in Docker). Therefore, expect the Docker images to be both over 1GB in size (due to npm modules).
+
 - Clone this repo
 
 ```bash
@@ -139,7 +141,12 @@ docker-compose down
 - Remove both built Docker images
 
 ```bash
-docker image prune
+# View images and their IDs
+docker images -a
+
+# Remove both images by their IDs
+docker rmi <angular_appImageID>
+docker rmi <json_serverImageID>
 ```
 
 ## License
