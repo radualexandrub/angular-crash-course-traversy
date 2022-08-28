@@ -148,6 +148,17 @@ docker images -a
 docker rmi <angular_appImageID>
 docker rmi <json_serverImageID>
 ```
+- Show Docker disk usage
+
+```bash
+docker system df
+```
+
+- (Optional) Remove all Docker data (including Images, Containers, Local Volumes and **Build Cache**)
+
+```bash
+docker system prune
+```
 
 ## License
 
