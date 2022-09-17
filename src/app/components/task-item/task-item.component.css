@@ -1,6 +1,6 @@
 .task {
   position: relative;
-  background: rgba(246, 249, 255, 0.75);
+  background: var(--container-color);
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
@@ -41,8 +41,8 @@
 
 /* Task with reminder state set on true */
 .task.reminder {
-  border-left: 0.25rem solid #1976d2;
+  border-left: 0.25rem solid var(--secondary-color);
 }
 .reminder .task__date {
-  color: #1976d2;
+  color: var(--secondary-color);
 }

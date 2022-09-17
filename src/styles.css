@@ -9,11 +9,23 @@
 :root {
   --primary-color: #0d47a1;
   --secondary-color: #1976d2;
+  --background-color: rgba(246, 249, 255, 0.75);
+  --container-color: rgba(255, 255, 255, 0.75);
+  --font-main-color: #000;
+}
+
+[data-theme="dark"] {
+  --primary-color: hsl(216, 85%, 80%);
+  --secondary-color: hsl(210, 79%, 75%);
+  --background-color: #0b1014;
+  --container-color: rgba(255, 255, 255, 0.05);;
+  --font-main-color: #fff;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: rgba(246, 249, 255, 0.75);
+  color: var(--font-main-color);
+  background: var(--background-color);
 }
 
 ::selection {
@@ -42,7 +54,7 @@ a {
   overflow: auto;
   min-height: 300px;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.75);
+  background: var(--container-color);
   backdrop-filter: saturate(170%) blur(7px);
 }
 
